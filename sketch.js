@@ -14,8 +14,8 @@ function preload(){
 
 function setup(){
   engine = Engine.create();
-	world = engine.world;
-	Engine.run(engine);
+  world = engine.world;
+  Engine.run(engine);
   createCanvas(1500,750);
   tank1 = createSprite(100,100,50,50);
 
@@ -79,7 +79,8 @@ wall16.display();
 wall17.display();
 wall18.display();
 wall19.display();
-
+tank1.display();
+	
 drawSprites();
 
 
