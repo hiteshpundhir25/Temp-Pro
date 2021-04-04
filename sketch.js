@@ -10,14 +10,15 @@ var x,y = 100;
 function preload(){
   coverimg = loadImage("Cover.png");
   backImg = loadImage("desert.jpg");
-}
+
 
 function setup(){
-  Engine = Engine.create();
-  World = engine.world;
+  engine = Engine.create();
+  world = engine.world;
   Engine.run(engine);
+	
   createCanvas(1500,750);
-  tank1 = createSprite(100,100,50,50);
+  tank1 = new Wall(100,100,50,50);
 
   wall1 = new Wall(800,220,400,10);
   wall2 = new Wall(600,275,10,120);
